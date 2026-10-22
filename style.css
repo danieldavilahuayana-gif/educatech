@@ -1,0 +1,202 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+color:#222;
+background:#ffffff;
+}
+
+.inicio{
+padding:100px 0;
+background:linear-gradient(135deg,#eaf3ff,#ffffff);
+min-height:550px;
+display:flex;
+align-items:center;
+}
+
+.inicio h1{
+font-size:45px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.inicio p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:25px;
+color:#555;
+}
+
+.inicio .btn{
+margin-right:8px;
+margin-bottom:8px;
+}
+
+.caja{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.10);
+}
+
+.imagen-inicio{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.caja h3{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.seccion{
+padding:80px 0;
+}
+
+.titulo{
+text-align:center;
+margin-bottom:45px;
+}
+
+.titulo h2{
+font-size:32px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.titulo p{
+color:#666;
+}
+
+.beneficios{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.beneficio{
+background:white;
+padding:30px 20px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.beneficio:hover{
+transform:translateY(-5px);
+}
+
+.emoji{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.beneficio h3{
+font-size:21px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.beneficio p{
+color:#666;
+line-height:1.5;
+}
+
+.programas{
+background:#f5f7fa;
+}
+
+.tarjeta{
+height:100%;
+border:none;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.tarjeta:hover{
+transform:translateY(-5px);
+}
+
+.tarjeta h3{
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.tarjeta p{
+color:#666;
+min-height:70px;
+}
+
+.formulario{
+max-width:700px;
+margin:auto;
+background:#f5f8fc;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.formulario small{
+color:#dc3545;
+display:block;
+margin-top:5px;
+}
+
+.mensaje{
+margin-top:20px;
+}
+
+footer{
+background:#172033;
+color:white;
+padding:50px 0 20px;
+}
+
+footer h4{
+font-weight:bold;
+margin-bottom:15px;
+}
+
+footer p{
+color:#d0d5dc;
+}
+
+footer hr{
+border-color:#555;
+margin:30px 0 15px;
+}
+
+@media(max-width:992px){
+.beneficios{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+.inicio{
+padding:70px 0;
+}
+
+.inicio h1{
+font-size:35px;
+}
+
+.beneficios{
+grid-template-columns:1fr;
+}
+
+.formulario{
+padding:25px;
+}
+}
